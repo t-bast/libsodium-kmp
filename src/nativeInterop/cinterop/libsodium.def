@@ -1,0 +1,5 @@
+package = libsodium
+headers = sodium.h
+headerFilter = sodium.h sodium/**
+libraryPaths.linux = c/libsodium/build/linux/
+linkerOpts.linux = -L/usr/lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib -lgmp
