@@ -1,3 +1,5 @@
+package org.cybele.sodium
+
 import kotlin.test.Test
 import kotlin.test.assertNotEquals
 
@@ -6,7 +8,9 @@ class SodiumTests {
 
     @Test
     fun generateRandomInt() {
-        assertNotEquals(0, sodium.random())
+        val r1 = sodium.random()
+        val r2 = sodium.random()
+        assertNotEquals(r1, r2)
     }
 
 }

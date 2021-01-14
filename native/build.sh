@@ -24,7 +24,8 @@ else
 fi
 
 ./autogen.sh
-./configure $CONF_OPTS --enable-shared=no
+# See https://github.com/jedisct1/libsodium/issues/292: disable-pie is necessary on some gcc versions on linux to ensure shared objects can link properly.
+./configure $CONF_OPTS --enable-shared=no --disable-pie
 make clean
 make
 

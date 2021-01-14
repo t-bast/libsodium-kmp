@@ -1,5 +1,11 @@
-rootProject.name = "libsodium-kmp"
+rootProject.name = "sodium-kmp"
 
 include(
-    ":native"
+    ":native",
+    ":jni",
+    ":jni:jvm",
+    ":jni:jvm:darwin",
+    ":jni:jvm:linux",
+    ":jni:jvm:mingw",
+    ":jni:jvm:all"
 )

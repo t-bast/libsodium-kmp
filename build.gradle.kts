@@ -13,7 +13,7 @@ buildscript {
 }
 
 allprojects {
-    group = "libsodium"
+    group = "org.cybele.sodium"
     version = "0.1.0"
 
     repositories {
@@ -46,6 +46,7 @@ kotlin {
     val jvmMain by sourceSets.getting
     val jvmTest by sourceSets.getting {
         dependencies {
+            implementation(project(":jni:jvm:all"))
             implementation(kotlin("test-junit"))
         }
     }

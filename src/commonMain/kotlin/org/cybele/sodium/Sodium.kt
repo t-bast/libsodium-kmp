@@ -1,3 +1,5 @@
+package org.cybele.sodium
+
 /**
  * Sodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more.
  * It is a portable, cross-compilable, installable, packageable fork of NaCl, with a compatible API, and an extended API to improve usability even further.
